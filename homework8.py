@@ -31,11 +31,22 @@ def adding(dict_input):
 adding(combined_dict)
 
 # Task 3
+def string_function():
+    string_input = input("\nWrite a sentence: ")
+    string_keys = []
+    for i in string_input:
+        string_keys.append(i)
+    string_values = []
+    for letters in string_keys: 
+        string_values.append(string_keys.count(letters))
+    dict_task_three = dict(zip(string_keys, string_values))
+    print(dict_task_three)
+
+string_function()
 
 # Taks 4
-#dict_to_print = input("Enter a dictionary")
-
 def dict_print(dict_to_print):
+    #dict_to_print = input("Enter a dictionary")
     print("\nThe keys and values of the dictionary are:")
     for key, value in dict_to_print.items():
         print("{}:{}".format(key,value))
